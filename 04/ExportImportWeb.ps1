@@ -3,14 +3,14 @@
     Add-PSSnapin "Microsoft.SharePoint.PowerShell"
 }
 
-#TemplateIDs: https://absolute-sharepoint.com/2013/06/sharepoint-2013-site-template-id-list-for-powershell.html
+#Get TemplateIDs from: https://absolute-sharepoint.com/2013/06/sharepoint-2013-site-template-id-list-for-powershell.html
 
 #Export
-Export-SPWeb -Identity http://sp2013c/ -Path "d:\SP2013_export.cmp" -IncludeVersions ALL
+Export-SPWeb -Identity http://sp2016/ -Path "d:\SP2016_export.cmp" -IncludeVersions ALL
 Write-Host "Export done"
 
 #Import
-New-SPSite http://sp2013c/sites/Import -OwnerAlias "spdom\Administrator" -Language 1033 -Template "ENTERWIKI#0"
+New-SPSite http://sp2016/sites/Import -OwnerAlias "spdom\Administrator" -Language 1033 -Template "ENTERWIKI#0"
 Write-Host "Site created"
-Import-SPWeb -Identity http://sp2013c/sites/Import -Path "d:\SP2013_export.cmp"
+Import-SPWeb -Identity http://sp2016/sites/Import -Path "d:\SP2016_export.cmp"
 Write-Host "Import done"
