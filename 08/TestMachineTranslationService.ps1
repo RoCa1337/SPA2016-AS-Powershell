@@ -1,10 +1,10 @@
 ﻿
-$siteUrl = "http://SP2013c/"
+$siteUrl = "http://SP2016/"
 $username = "Administrator@spdom.local" 
 $password = ConvertTo-SecureString "Pa$$w0rd" -AsPlainText -Force
 $language = "fr-fr"
-$input = "http://sp2013c/Documents/Demo.docx"
-$output = "http://SP2013c/Documents/DemoFR.docx"
+$input = "http://sp2016/Documents/Demo.docx"
+$output = "http://SP2016/Documents/DemoFR.docx"
 
 Add-Type -Path "c:\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.Client.dll" 
 Add-Type -Path "c:\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.Client.Runtime.dll" 

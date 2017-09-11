@@ -1,5 +1,5 @@
 ﻿#Read Values
-$site = Get-SPSite http://sp2013c
+$site = Get-SPSite http://sp2016
 Write-Host "Current Filter for People Picker" $site.UserAccountDirectoryPath 
 
 #Write Filter

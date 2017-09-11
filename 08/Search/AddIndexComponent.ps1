@@ -4,7 +4,7 @@
 }
 
 #Get Search Service Instance and Start on New Index Server
-$ssi = Get-SPEnterpriseSearchServiceInstance -Identity "SP2013Node2"
+$ssi = Get-SPEnterpriseSearchServiceInstance -Identity "SP2016Node2"
 Start-SPEnterpriseSearchServiceInstance -Identity $ssi
 
 #Wait for Search Service Instance to come online

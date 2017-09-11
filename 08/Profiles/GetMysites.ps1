@@ -3,6 +3,6 @@
     Add-PSSnapin "Microsoft.SharePoint.PowerShell"
 }
 
-$WebApp =  Get-SPWebApplication -Identity http://sp2013c 
-$Sites = $WebApp.Sites | Where-Object {$_.URL -like "http://sp2013c/my/personal/*"}
+$WebApp =  Get-SPWebApplication -Identity http://sp2016 
+$Sites = $WebApp.Sites | Where-Object {$_.URL -like "http://sp2016/my/personal/*"}
 $Sites | Select-Object URL, LastContentModifiedDate | Sort LastContentModifiedDate -Descending

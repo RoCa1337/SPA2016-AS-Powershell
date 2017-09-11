@@ -13,7 +13,7 @@ function PollService
  
 Write-Progress -Activity "Provisioning User Profile Service Application" -Status "Creating Script Variables" 
  
-$ProfileSyncServer = "SP2013c" 
+$ProfileSyncServer = "SP2016" 
  
 $UserProfileDB = "Contoso_Profile_DB" 
  

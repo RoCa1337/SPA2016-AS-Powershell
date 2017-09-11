@@ -6,7 +6,7 @@
 write-host -ForegroundColor Green "setup managed metadata service…";
 
 $FarmName = "SPDom" 
-$DatabaseServer = "SP2013c" 
+$DatabaseServer = "SP2016" 
 $DatabaseUser = "spdom\spservice" 
 $DatabaseUserPassword = (ConvertTo-SecureString "Pa$$w0rd" -AsPlainText -force) 
 $DatabaseCredentials = New-Object -TypeName System.Management.Automation.PSCredential -argumentlist $DatabaseUser, $DatabaseUserPassword 
