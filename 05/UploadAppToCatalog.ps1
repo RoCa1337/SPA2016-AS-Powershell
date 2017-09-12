@@ -17,7 +17,7 @@ Add-Type -Path 'C:\Program Files\Common Files\Microsoft Shared\Web Server Extens
 
 $loginname = "spdom\administrator"
 $pwd = "Pa$$w0rd"
-$Password = ConvertTo-SecureString $Password -AsPlainText -Force 
+$Password = ConvertTo-SecureString $pwd -AsPlainText -Force 
 
 $ctx = New-Object Microsoft.SharePoint.Client.ClientContext($siteUrl)
 $ctx.Credentials = New-Object System.Net.NetworkCredential($loginname, $Password)
