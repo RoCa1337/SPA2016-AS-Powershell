@@ -1,1 +1,0 @@
- x:\Setup.exe /configurationfile="c:\spsetup\ConfigurationFile.ini" /IAcceptSQLServerLicenseTerms
