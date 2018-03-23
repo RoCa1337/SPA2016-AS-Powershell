@@ -6,7 +6,7 @@
 #Get TemplateIDs from: https://absolute-sharepoint.com/2013/06/sharepoint-2013-site-template-id-list-for-powershell.html
 
 #Export
-Export-SPWeb -Identity http://sp2016/ -Path "d:\SP2016_export.cmp" -IncludeVersions ALL
+Export-SPWeb -Identity http://sp2016/ -Path "d:\entwiki-1033.cmp" -IncludeVersions ALL
 Write-Host "Export done"
 
 #Import

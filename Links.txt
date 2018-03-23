@@ -1,1 +1,0 @@
-https://channel9.msdn.com/Blogs/MVP-Azure/Transitioning-from-PowerShell-ISE-to-VS-Code
